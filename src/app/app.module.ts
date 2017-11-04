@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { TdcRoutingModule } from './components/tdc/tdc-routing.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -19,6 +20,8 @@ import { OuterComponent } from './components/outer/outer.component';
   ],
   imports: [
     BrowserModule,
+
+    TdcRoutingModule,
     AppRoutingModule,
     EbayModule,
     TdcModule,

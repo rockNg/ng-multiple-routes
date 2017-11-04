@@ -20,11 +20,11 @@ const appRoutes: Routes = [
 		loadChildren: 'app/components/ebay/ebay.module#EbayModule',
 		// data: { preload: true }
 	},
-	{
+/*	{
 		path: 'tdc',
 		loadChildren: 'app/components/tdc/tdc.module#TdcModule',
-		// data: { preload: true }
-	},
+		data: { preload: true }
+	},*/
 	{
 		path: 'outer',
 		component: OuterComponent,

@@ -9,7 +9,7 @@ import { FuckComponent } from '../fuck/fuck.component';
 
 const appRoutes: Routes = [
 	{
-	  path: '',
+	  path: 'tdc',
 	  component: TdcComponent,
 	  // outlet: 'popup'
 	  children: [

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TdcModule } from './components/tdc/tdc.module';
 import { EbayModule } from './components/ebay/ebay.module';
 import { EbayComponent } from './components/ebay/ebay.component';
+import { FuckComponent } from './components/fuck/fuck.component';
 
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
@@ -22,6 +23,11 @@ const appRoutes: Routes = [
 		path: 'tdc',
 		loadChildren: 'app/components/tdc/tdc.module#TdcModule',
 		// data: { preload: true }
+	},
+	{
+		path: 'fuck',
+		component: FuckComponent,
+		outlet: 'popup'
 	},
 	{ path: '', redirectTo: '/tdc', pathMatch: 'full' },
 	{ path: '**', component: PageNotFoundComponent }

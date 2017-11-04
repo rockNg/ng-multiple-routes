@@ -6,6 +6,7 @@ import { EbayModule } from './components/ebay/ebay.module';
 import { EbayComponent } from './components/ebay/ebay.component';
 import { FuckComponent } from './components/fuck/fuck.component';
 
+import { OuterComponent } from './components/outer/outer.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
@@ -25,10 +26,15 @@ const appRoutes: Routes = [
 		// data: { preload: true }
 	},
 	{
-		path: 'fuck',
-		component: FuckComponent,
-		outlet: 'popup'
+		path: 'outer',
+		component: OuterComponent,
+		outlet: 'outerOutlet'
 	},
+	// {
+	// 	path: 'fuck',
+	// 	component: FuckComponent,
+	// 	outlet: 'outerOutlet2'
+	// },
 	{ path: '', redirectTo: '/tdc', pathMatch: 'full' },
 	{ path: '**', component: PageNotFoundComponent }
 ];

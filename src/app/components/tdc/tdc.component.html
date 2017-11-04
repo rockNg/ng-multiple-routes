@@ -4,7 +4,12 @@
 <nav>
 	<a routerLink="./pilot" routerLinkActive="active">pilot</a>
 	<a routerLink="./workflow" routerLinkActive="active">workflow</a>
+	<!-- <a routerLink="./fuck" routerLinkActive="active">fuck</a> -->
+	<!-- <a [routerLink]="[{ outlets: { popup: ['./fuck'] } }]">fuck</a> -->
+	<!-- <a [routerLink]="['/tdc', {outlets: {popup: 'fuck'}}]">fuck</a> -->
+	<!-- <a [routerLink]="[{outlets: {popup: '/tdc/fuck'}}]">fuck</a> -->
+	<a [routerLink]="[{outlets: {popup: 'fuck'}}]">fuck</a>
 </nav>
 <router-outlet></router-outlet>
-
+<router-outlet name="popup"></router-outlet>
 <!--2-->

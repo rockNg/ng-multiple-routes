@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TdcComponent } from './tdc.component';
 import { PilotComponent } from './pilot/pilot.component';
 import { WorkflowComponent } from './workflow/workflow.component';
+import { FuckComponent } from '../fuck/fuck.component';
 
 const appRoutes: Routes = [
 	{
@@ -23,6 +24,10 @@ const appRoutes: Routes = [
 						path: 'workflow',
 						component: WorkflowComponent,
 						data: { preload: true },
+					},
+					{
+						path: 'fuck',
+						component: FuckComponent,
 						outlet: 'popup'
 					},
 					{

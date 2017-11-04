@@ -6,8 +6,11 @@
 <nav>
 	<a routerLink="/tdc" routerLinkActive="active">TDC</a>
 	<a routerLink="/ebay" routerLinkActive="active">eBay</a>
-	<a [routerLink]="[{ outlets: { popup: ['fuck'] } }]">fuck</a>
+	<a [routerLink]="[{ outlets: { outerOutlet: ['outer'] } }]">outer</a>
+	<!-- <a [routerLink]="[{ outlets: { outerOutlet2: ['fuck'] } }]">fuck</a> -->
 </nav>
 
 <router-outlet></router-outlet>
-<router-outlet name="popup"></router-outlet>
+
+<router-outlet name="outerOutlet"></router-outlet>
+<!-- <router-outlet name="outerOutlet2"></router-outlet> -->

@@ -15,7 +15,7 @@ export class FuckComponent implements OnInit {
   closePopup() {
   // Providing a `null` value to the named outlet
   // clears the contents of the named outlet
-  this.router.navigate([{ outlets: { popup: null }}]);
+  this.router.navigate([{ outlets: { outerOutlet: null }}]);
   }
 
 }
